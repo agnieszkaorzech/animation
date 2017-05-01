@@ -1,0 +1,120 @@
+.container {
+    position: relative;;
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+}
+
+.human {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    bottom: 25%;
+    right: 45%;
+    -webkit-animation: spin 6s linear infinite;
+    -moz-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        bottom: 25%;
+        right: 45%;
+    }
+    30% {
+        bottom: 65%;
+        right: 65%;
+    }
+    32%{
+        transform: rotate(-90deg);
+    }
+    60% {
+        bottom: 25%;
+        right: 85%;
+        transform: rotate(80deg);
+    }
+    100% {
+        bottom: 25%;
+        right: 45%;
+    }
+}
+
+/*Human animation -end*/
+.screen {
+    position: absolute;
+    width: 21%;
+    height: 63%;
+    top: 17%;
+    right: 6%;
+}
+
+@keyframes cf4FadeInOut {
+
+    0% {
+        opacity:1;
+    }
+    30% {
+        opacity:1;
+    }
+    35% {
+        opacity:0;
+    }
+    70% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+
+}
+
+#setOfImage img {
+
+    -webkit-animation-name: cf4FadeInOut;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+
+    -moz-animation-name: cf4FadeInOut;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 6s;
+
+    -o-animation-name: cf4FadeInOut;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: infinite;
+    -o-animation-duration: 6s;
+
+    animation-name: cf4FadeInOut;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-direction: alternate;
+
+}
+
+#setOfImage img:nth-of-type(1) {
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
+
+}
+
+#setOfImage img:nth-of-type(2) {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+
+}
+
+#setOfImage img:nth-of-type(3) {
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    animation-delay: 0s;
+
+}
