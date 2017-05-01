@@ -27,13 +27,9 @@
         bottom: 65%;
         right: 65%;
     }
-    32%{
-        transform: rotate(-90deg);
-    }
     60% {
         bottom: 25%;
         right: 85%;
-        transform: rotate(80deg);
     }
     100% {
         bottom: 25%;
@@ -64,6 +60,9 @@
     70% {
         opacity:0;
     }
+    98% {
+        opacity:0;
+    }
     100% {
         opacity:1;
     }
@@ -73,25 +72,25 @@
 #setOfImage img {
 
     -webkit-animation-name: cf4FadeInOut;
-    -webkit-animation-timing-function: linear;
+    -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-duration: 6s;
 
     -moz-animation-name: cf4FadeInOut;
-    -moz-animation-timing-function: linear;
+    -moz-animation-timing-function: ease-in-out;
     -moz-animation-iteration-count: infinite;
     -moz-animation-duration: 6s;
 
     -o-animation-name: cf4FadeInOut;
-    -o-animation-timing-function: linear;
+    -o-animation-timing-function: ease-in-out;
     -o-animation-iteration-count: infinite;
     -o-animation-duration: 6s;
 
     animation-name: cf4FadeInOut;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 6s;
-    animation-direction: alternate;
+    /*animation-direction: alternate;*/
 
 }
 
